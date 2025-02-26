@@ -1,39 +1,39 @@
 {
   "colors": [
     {
-      "name": "Red",
-      "hex": "#FF0000",
-      "rgb": "rgb(255, 0, 0)",
-      "hsl": "hsl(0, 100%, 50%)",
-      "cmyk": "cmyk(0%, 100%, 100%, 0%)",
+      "name": "Crimson Red",
+      "hex": "#DC143C",
+      "rgb": "rgb(220, 20, 60)",
+      "hsl": "hsl(348, 83%, 47%)",
+      "cmyk": "cmyk(0%, 91%, 73%, 14%)",
       "textColor": "white"
     },
     {
-      "name": "Green",
-      "hex": "#00FF00",
-      "rgb": "rgb(0, 255, 0)",
-      "hsl": "hsl(120, 100%, 50%)",
-      "cmyk": "cmyk(100%, 0%, 100%, 0%)",
+      "name": "Emerald Green",
+      "hex": "#50C878",
+      "rgb": "rgb(80, 200, 120)",
+      "hsl": "hsl(141, 60%, 50%)",
+      "cmyk": "cmyk(60%, 0%, 40%, 22%)",
       "textColor": "black"
     },
     {
-      "name": "Blue",
-      "hex": "#0000FF",
-      "rgb": "rgb(0, 0, 255)",
-      "hsl": "hsl(240, 100%, 50%)",
-      "cmyk": "cmyk(100%, 100%, 0%, 0%)",
+      "name": "Royal Blue",
+      "hex": "#4169E1",
+      "rgb": "rgb(65, 105, 225)",
+      "hsl": "hsl(225, 73%, 57%)",
+      "cmyk": "cmyk(71%, 53%, 0%, 12%)",
       "textColor": "white"
     },
     {
-      "name": "Yellow",
-      "hex": "#FFFF00",
-      "rgb": "rgb(255, 255, 0)",
-      "hsl": "hsl(60, 100%, 50%)",
-      "cmyk": "cmyk(0%, 0%, 100%, 0%)",
+      "name": "Goldenrod Yellow",
+      "hex": "#DAA520",
+      "rgb": "rgb(218, 165, 32)",
+      "hsl": "hsl(43, 74%, 49%)",
+      "cmyk": "cmyk(0%, 24%, 85%, 15%)",
       "textColor": "black"
     },
     {
-      "name": "Cyan",
+      "name": "Electric Cyan",
       "hex": "#00FFFF",
       "rgb": "rgb(0, 255, 255)",
       "hsl": "hsl(180, 100%, 50%)",
@@ -41,7 +41,7 @@
       "textColor": "black"
     },
     {
-      "name": "Magenta",
+      "name": "Fuchsia Pink",
       "hex": "#FF00FF",
       "rgb": "rgb(255, 0, 255)",
       "hsl": "hsl(300, 100%, 50%)",
@@ -49,68 +49,156 @@
       "textColor": "white"
     },
     {
-      "name": "Orange",
-      "hex": "#FFA500",
-      "rgb": "rgb(255, 165, 0)",
-      "hsl": "hsl(39, 100%, 50%)",
-      "cmyk": "cmyk(0%, 35%, 100%, 0%)",
+      "name": "Tangerine Orange",
+      "hex": "#FF6347",
+      "rgb": "rgb(255, 99, 71)",
+      "hsl": "hsl(9, 100%, 64%)",
+      "cmyk": "cmyk(0%, 61%, 72%, 0%)",
       "textColor": "black"
     },
     {
-      "name": "Purple",
-      "hex": "#800080",
-      "rgb": "rgb(128, 0, 128)",
-      "hsl": "hsl(300, 100%, 25%)",
-      "cmyk": "cmyk(0%, 100%, 0%, 50%)",
+      "name": "Violet Purple",
+      "hex": "#7A3D99",
+      "rgb": "rgb(122, 61, 153)",
+      "hsl": "hsl(270, 44%, 41%)",
+      "cmyk": "cmyk(20%, 60%, 0%, 40%)",
       "textColor": "white"
     },
     {
-      "name": "Pink",
-      "hex": "#FFC0CB",
-      "rgb": "rgb(255, 192, 203)",
-      "hsl": "hsl(350, 100%, 88%)",
-      "cmyk": "cmyk(0%, 25%, 20%, 0%)",
+      "name": "Lavender Pink",
+      "hex": "#E6A9D0",
+      "rgb": "rgb(230, 169, 208)",
+      "hsl": "hsl(323, 49%, 78%)",
+      "cmyk": "cmyk(0%, 26%, 10%, 10%)",
       "textColor": "black"
     },
     {
-      "name": "Brown",
-      "hex": "#A52A2A",
-      "rgb": "rgb(165, 42, 42)",
-      "hsl": "hsl(0, 59%, 41%)",
-      "cmyk": "cmyk(0%, 75%, 75%, 35%)",
+      "name": "Chestnut Brown",
+      "hex": "#954535",
+      "rgb": "rgb(149, 69, 53)",
+      "hsl": "hsl(0, 41%, 41%)",
+      "cmyk": "cmyk(0%, 54%, 64%, 42%)",
       "textColor": "white"
     },
     {
-      "name": "Gray",
-      "hex": "#808080",
-      "rgb": "rgb(128, 128, 128)",
-      "hsl": "hsl(0, 0%, 50%)",
-      "cmyk": "cmyk(0%, 0%, 0%, 50%)",
+      "name": "Slate Gray",
+      "hex": "#708090",
+      "rgb": "rgb(112, 128, 144)",
+      "hsl": "hsl(210, 13%, 50%)",
+      "cmyk": "cmyk(22%, 11%, 0%, 44%)",
       "textColor": "white"
     },
     {
-      "name": "Black",
-      "hex": "#000000",
-      "rgb": "rgb(0, 0, 0)",
-      "hsl": "hsl(0, 0%, 0%)",
-      "cmyk": "cmyk(0%, 0%, 0%, 100%)",
+      "name": "Obsidian Black",
+      "hex": "#0C0C0C",
+      "rgb": "rgb(12, 12, 12)",
+      "hsl": "hsl(0, 0%, 5%)",
+      "cmyk": "cmyk(0%, 0%, 0%, 95%)",
       "textColor": "white"
     },
     {
-      "name": "White",
-      "hex": "#FFFFFF",
-      "rgb": "rgb(255, 255, 255)",
-      "hsl": "hsl(0, 0%, 100%)",
-      "cmyk": "cmyk(0%, 0%, 0%, 0%)",
+      "name": "Ivory White",
+      "hex": "#FFFFF0",
+      "rgb": "rgb(255, 255, 240)",
+      "hsl": "hsl(60, 100%, 97%)",
+      "cmyk": "cmyk(0%, 0%, 6%, 0%)",
       "textColor": "black"
     },
     {
-      "name": "Teal",
-      "hex": "#008080",
-      "rgb": "rgb(0, 128, 128)",
-      "hsl": "hsl(180, 100%, 25%)",
-      "cmyk": "cmyk(100%, 0%, 0%, 50%)",
+      "name": "Deep Teal",
+      "hex": "#006D6B",
+      "rgb": "rgb(0, 109, 107)",
+      "hsl": "hsl(179, 100%, 21%)",
+      "cmyk": "cmyk(100%, 0%, 2%, 57%)",
       "textColor": "white"
+    },
+    {
+      "name": "Lime Green",
+      "hex": "#32CD32",
+      "rgb": "rgb(50, 205, 50)",
+      "hsl": "hsl(120, 61%, 50%)",
+      "cmyk": "cmyk(76%, 0%, 76%, 20%)",
+      "textColor": "black"
+    },
+    {
+      "name": "Coral Red",
+      "hex": "#FF4040",
+      "rgb": "rgb(255, 64, 64)",
+      "hsl": "hsl(0, 100%, 63%)",
+      "cmyk": "cmyk(0%, 75%, 75%, 0%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Peach Puff",
+      "hex": "#FFDAB9",
+      "rgb": "rgb(255, 218, 185)",
+      "hsl": "hsl(39, 100%, 86%)",
+      "cmyk": "cmyk(0%, 15%, 27%, 0%)",
+      "textColor": "black"
+    },
+    {
+      "name": "Indigo",
+      "hex": "#4B0082",
+      "rgb": "rgb(75, 0, 130)",
+      "hsl": "hsl(275, 100%, 25%)",
+      "cmyk": "cmyk(42%, 100%, 0%, 49%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Turquoise Blue",
+      "hex": "#00B5E2",
+      "rgb": "rgb(0, 181, 226)",
+      "hsl": "hsl(191, 100%, 45%)",
+      "cmyk": "cmyk(100%, 20%, 0%, 11%)",
+      "textColor": "black"
+    },
+    {
+      "name": "Mauve",
+      "hex": "#E0B0FF",
+      "rgb": "rgb(224, 176, 255)",
+      "hsl": "hsl(263, 100%, 82%)",
+      "cmyk": "cmyk(12%, 31%, 0%, 0%)",
+      "textColor": "black"
+    },
+    {
+      "name": "Sea Green",
+      "hex": "#2E8B57",
+      "rgb": "rgb(46, 139, 87)",
+      "hsl": "hsl(146, 50%, 36%)",
+      "cmyk": "cmyk(67%, 0%, 37%, 45%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Amethyst Purple",
+      "hex": "#9B59B6",
+      "rgb": "rgb(155, 89, 182)",
+      "hsl": "hsl(288, 39%, 53%)",
+      "cmyk": "cmyk(15%, 51%, 0%, 29%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Sunset Orange",
+      "hex": "#FF4500",
+      "rgb": "rgb(255, 69, 0)",
+      "hsl": "hsl(16, 100%, 50%)",
+      "cmyk": "cmyk(0%, 73%, 100%, 0%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Midnight Blue",
+      "hex": "#191970",
+      "rgb": "rgb(25, 25, 112)",
+      "hsl": "hsl(240, 64%, 27%)",
+      "cmyk": "cmyk(78%, 78%, 0%, 56%)",
+      "textColor": "white"
+    },
+    {
+      "name": "Turquoise Green",
+      "hex": "#A0D6B4",
+      "rgb": "rgb(160, 214, 180)",
+      "hsl": "hsl(140, 33%, 70%)",
+      "cmyk": "cmyk(25%, 0%, 16%, 16%)",
+      "textColor": "black"
     }
   ]
 }

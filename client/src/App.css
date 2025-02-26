@@ -1,7 +1,7 @@
 #root {
   min-height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: white;
 }
 
 .logo {
@@ -42,20 +42,46 @@
 .main-container {
   width: 100%;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
 .color-container {
   display: flex;
-  justify-content: stretch;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: end;
   width: 100%;
-  min-height: 95vh;
+}
+.color-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
 }
 .color-column {
   flex: 1;
+}
+.color-row {
+  flex: 1;
+  width: 100%;
+}
+.color-info {
+  width: 100%;
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.color-info-small {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 form {
   display: flex;
