@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { getRandomColors } from "./randomColors.js";
 
 const app = express();
 
@@ -11,10 +12,7 @@ const port = 3000;
 app.use(cors(corsOptions));
 
 app.get("/api", (req, res) => {
-  res.json([
-    { name: "blue", hexcode: "#414151" },
-    { name: "red", hexcode: "#414123123" },
-  ]);
+  res.json(getRandomColors());
 });
 
 app.listen(port, () => {
