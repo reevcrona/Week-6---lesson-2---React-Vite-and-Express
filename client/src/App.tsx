@@ -7,7 +7,9 @@ function App() {
 
   const fetchApi = async () => {
     try {
-      const response = await axios.get<color[]>("http://localhost:3000/api");
+      const response = await axios.get<color[]>(
+        "http://localhost:3000/colors/4"
+      );
       console.log(response.data);
       setApiData(response.data);
     } catch (error) {
@@ -35,7 +37,14 @@ function App() {
     }
   };
 
-  return <div className="color-container">{renderData()}</div>;
+  return (
+    <div className="main-container">
+      <form>
+        <input type="text" />
+      </form>
+      <div className="color-container">{renderData()}</div>
+    </div>
+  );
 }
 
 export default App;

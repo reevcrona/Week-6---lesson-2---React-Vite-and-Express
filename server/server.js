@@ -11,8 +11,9 @@ const port = 3000;
 
 app.use(cors(corsOptions));
 
-app.get("/api", (req, res) => {
-  res.json(getRandomColors());
+app.get("/colors/:quantity", (req, res) => {
+  const reqQuantity = parseInt(req.params.quantity);
+  res.json(getRandomColors(reqQuantity));
 });
 
 app.listen(port, () => {
