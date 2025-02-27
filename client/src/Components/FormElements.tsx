@@ -7,12 +7,18 @@ function FormElements({
   fetchRandomColors,
   inputValue,
   setInputValue,
+  selectValue,
   setSelectValue,
+  setApiData,
 }: FormElementsProps) {
   return (
     <>
       <div className="buttons-container">
-        <form onSubmit={(e) => fetchRandomColors(e)}>
+        <form
+          onSubmit={(e) =>
+            fetchRandomColors(e, inputValue, setApiData, setInputValue)
+          }
+        >
           <input
             type="number"
             placeholder="Amount of colors"
@@ -28,7 +34,9 @@ function FormElements({
             Get random Colors
           </button>
         </form>
-        <form onSubmit={(e) => fetchColorsFromGroup(e)}>
+        <form
+          onSubmit={(e) => fetchColorsFromGroup(e, setApiData, selectValue)}
+        >
           <label htmlFor="color-select"></label>
           <select
             onChange={(e) => setSelectValue(e.target.value)}
@@ -54,12 +62,16 @@ function FormElements({
             Get colors from group
           </button>
         </form>
-        <button className="api-button" onClick={fetchAllColors} type="button">
+        <button
+          className="api-button"
+          onClick={() => fetchAllColors(setApiData)}
+          type="button"
+        >
           Get all colors
         </button>
         <button
           className="api-button"
-          onClick={fetchArandomColor}
+          onClick={() => fetchArandomColor(setApiData)}
           type="button"
         >
           Get a random color
