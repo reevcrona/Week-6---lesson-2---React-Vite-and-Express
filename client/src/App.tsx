@@ -66,26 +66,28 @@ function App() {
   };
 
   const renderData = () => {
-    if (!apiData || apiData.length > 0) return <p>No colors found</p>;
-    return apiData.map((item, index) => {
-      return (
-        <div
-          className={apiData.length > 5 ? "color-row" : "color-column"}
-          style={{ backgroundColor: item.hex, color: item.textColor }}
-          key={index}
-        >
+    if (apiData && apiData.length > 0) {
+      return apiData.map((item, index) => {
+        return (
           <div
-            className={apiData.length > 5 ? "color-info-small" : "color-info"}
+            className={apiData.length > 5 ? "color-row" : "color-column"}
+            style={{ backgroundColor: item.hex, color: item.textColor }}
+            key={index}
           >
-            <h3>{item.name}</h3>
-            <p>Hexcode: {item.hex}</p>
-            <p>{item.rgb}</p>
-            <p>{item.cmyk}</p>
-            <p>{item.hsl}</p>
+            <div
+              className={apiData.length > 5 ? "color-info-small" : "color-info"}
+            >
+              <h3>{item.name}</h3>
+              <p>Hexcode: {item.hex}</p>
+              <p>{item.rgb}</p>
+              <p>{item.cmyk}</p>
+              <p>{item.hsl}</p>
+            </div>
           </div>
-        </div>
-      );
-    });
+        );
+      });
+    }
+    return <p>No colors found</p>;
   };
 
   return (
