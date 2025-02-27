@@ -7,7 +7,6 @@ export interface Color {
   textColor: string;
   colorGroup: string;
 }
-export interface ApiResponse<T> {
-  status: string;
-  data: T;
+export interface ColorListProps {
+  apiData: Color[];
 }

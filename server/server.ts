@@ -15,6 +15,12 @@ const corsOptions = {
 const port = 3000;
 
 app.use(cors(corsOptions));
+
+app.use((req, res, next) => {
+  res.setHeader("Content-Type", "application/json");
+  next();
+});
+
 app.get("/colors/group", (req, res) => {
   const reqColor = req.query.color;
 

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import { Color, ApiResponse } from "./types";
+import { Color } from "./types";
+import ColorList from "./Components/ColorList";
 function App() {
-  const [apiData, setApiData] = useState<Color[] | null>(null);
+  const [apiData, setApiData] = useState<Color[]>([]);
   const [inputValue, setInputValue] = useState<string>("");
   const [selectValue, setSelectValue] = useState<string>("Red");
 
@@ -16,15 +17,12 @@ function App() {
   ): Promise<void> => {
     try {
       e.preventDefault();
-      const response = await axios.get<ApiResponse<Color[]>>(
+      const response = await axios.get<Color[]>(
         `http://localhost:3000/colors/${inputValue}`
       );
-      if (response.data.status === "success") {
-        setApiData(response.data.data);
-        setInputValue("");
-      } else {
-        throw new Error("Failed to get color data");
-      }
+
+      setApiData(response.data);
+      setInputValue("");
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }
@@ -34,6 +32,7 @@ function App() {
     try {
       const response = await axios.get<Color[]>("http://localhost:3000/colors");
       setApiData(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }
@@ -64,31 +63,6 @@ function App() {
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }
-  };
-
-  const renderData = () => {
-    if (apiData && apiData.length > 0) {
-      return apiData.map((item, index) => {
-        return (
-          <div
-            className={apiData.length > 5 ? "color-row" : "color-column"}
-            style={{ backgroundColor: item.hex, color: item.textColor }}
-            key={index}
-          >
-            <div
-              className={apiData.length > 5 ? "color-info-small" : "color-info"}
-            >
-              <h3>{item.name}</h3>
-              <p>Hexcode: {item.hex}</p>
-              <p>{item.rgb}</p>
-              <p>{item.cmyk}</p>
-              <p>{item.hsl}</p>
-            </div>
-          </div>
-        );
-      });
-    }
-    return <p>No colors found</p>;
   };
 
   return (
@@ -154,7 +128,7 @@ function App() {
             : "color-container"
         }
       >
-        {renderData()}
+        <ColorList apiData={apiData} />
       </div>
     </div>
   );
