@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import { Color } from "./types";
+import { Color, ApiResponse } from "./types";
 function App() {
   const [apiData, setApiData] = useState<Color[] | null>(null);
   const [inputValue, setInputValue] = useState<string>("");
@@ -16,12 +16,15 @@ function App() {
   ): Promise<void> => {
     try {
       e.preventDefault();
-      const response = await axios.get<Color[]>(
+      const response = await axios.get<ApiResponse<Color[]>>(
         `http://localhost:3000/colors/${inputValue}`
       );
-      console.log(response.data);
-      setApiData(response.data);
-      setInputValue("");
+      if (response.data.status === "success") {
+        setApiData(response.data.data);
+        setInputValue("");
+      } else {
+        throw new Error("Failed to get color data");
+      }
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }

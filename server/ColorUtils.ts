@@ -1,6 +1,6 @@
 import colors from "./colors.json" with { type: "json" };
 import { Color } from "./serverTypes";
-const fakeColorsDb:Color[] = colors.colors;
+const fakeColorsDb:Color[] = colors.data;
 
 export const getRandomColors = (quantity:number):Color[] => {
   let tempSet:Set<Color> = new Set();

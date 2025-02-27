@@ -1,5 +1,6 @@
 {
-  "colors": [
+  "status": "success",
+  "data": [
     {
       "name": "Crimson Red",
       "hex": "#DC143C",

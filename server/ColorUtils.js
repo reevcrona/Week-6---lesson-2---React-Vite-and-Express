@@ -1,5 +1,5 @@
 import colors from "./colors.json" with { type: "json" };
-const fakeColorsDb = colors.colors;
+const fakeColorsDb = colors.data;
 export const getRandomColors = (quantity) => {
     let tempSet = new Set();
     while (tempSet.size < quantity) {
