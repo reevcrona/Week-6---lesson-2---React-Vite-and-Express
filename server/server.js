@@ -1,6 +1,10 @@
 import express from "express";
 import cors from "cors";
-import { getRandomColors } from "./randomColors.js";
+import {
+  getAllColors,
+  getRandomColors,
+  getARandomColor,
+} from "./colorsUtils.js";
 
 const app = express();
 
@@ -11,6 +15,12 @@ const port = 3000;
 
 app.use(cors(corsOptions));
 
+app.get("/colors", (req, res) => {
+  res.json(getAllColors());
+});
+app.get("/colors/random", (req, res) => {
+  res.json(getARandomColor());
+});
 app.get("/colors/:quantity", (req, res) => {
   const reqQuantity = parseInt(req.params.quantity);
   res.json(getRandomColors(reqQuantity));

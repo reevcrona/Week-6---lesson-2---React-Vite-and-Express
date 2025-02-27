@@ -12,5 +12,13 @@ export const getRandomColors = (quantity) => {
   const colorsArray = [...tempSet];
   return colorsArray;
 };
-
-console.log(getRandomColors());
+export const getARandomColor = () => {
+  let colorsArray = [];
+  const randomColor =
+    fakeColorsDb[Math.floor(Math.random() * fakeColorsDb.length)];
+  colorsArray.push(randomColor);
+  return colorsArray;
+};
+export const getAllColors = () => {
+  return fakeColorsDb;
+};

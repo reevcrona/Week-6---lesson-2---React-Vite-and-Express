@@ -86,5 +86,19 @@
 form {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+}
+.form-input {
+  width: 120px;
+  margin-right: 1em;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  gap: 4em;
+}
+.api-button {
+  background-color: #7a3d99;
+  color: white;
 }

@@ -16,13 +16,30 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
+  const fetchAllColors = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/colors");
+      setApiData(response.data);
+    } catch (error) {
+      console.error(`Unexpected error: ${error}`);
+    }
+  };
+  const fetchArandomColor = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/colors/random");
+      console.log(response.data);
+      setApiData(response.data);
+    } catch (error) {
+      console.error(`Unexpected error: ${error}`);
+    }
+  };
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     fetchApi();
     setInputValue("");
   };
   useEffect(() => {
-    fetchApi();
+    fetchArandomColor();
   }, []);
 
   const renderData = () => {
@@ -51,18 +68,34 @@ function App() {
 
   return (
     <div className="main-container">
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <input
-          type="number"
-          placeholder="Amount of colors"
-          value={inputValue}
-          min="1"
-          max="25"
-          required
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <button type="submit">Get Colors</button>
-      </form>
+      <div className="buttons-container">
+        <form onSubmit={(e) => handleSubmit(e)}>
+          <input
+            type="number"
+            placeholder="Amount of colors"
+            className="form-input"
+            value={inputValue}
+            min="1"
+            max="25"
+            required
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+
+          <button className="api-button" type="submit">
+            Get random Colors
+          </button>
+        </form>
+        <button className="api-button" onClick={fetchAllColors} type="button">
+          Get all colors
+        </button>
+        <button
+          className="api-button"
+          onClick={fetchArandomColor}
+          type="button"
+        >
+          Get a random color
+        </button>
+      </div>
       <div
         className={
           apiData && apiData.length > 5
