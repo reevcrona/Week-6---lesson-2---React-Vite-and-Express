@@ -22,3 +22,9 @@ export const getARandomColor = () => {
 export const getAllColors = () => {
   return fakeColorsDb;
 };
+export const getColorsFromGroup = (colorGroup) => {
+  const colorGroupArray = fakeColorsDb.filter(
+    (color) => color.colorGroup.toLowerCase() === colorGroup.toLowerCase()
+  );
+  return colorGroupArray;
+};

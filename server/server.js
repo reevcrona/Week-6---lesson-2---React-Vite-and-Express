@@ -4,6 +4,7 @@ import {
   getAllColors,
   getRandomColors,
   getARandomColor,
+  getColorsFromGroup,
 } from "./colorsUtils.js";
 
 const app = express();
@@ -14,13 +15,17 @@ const corsOptions = {
 const port = 3000;
 
 app.use(cors(corsOptions));
-
-app.get("/colors", (req, res) => {
-  res.json(getAllColors());
+app.get("/colors/group", (req, res) => {
+  const reqColor = req.query.color;
+  res.json(getColorsFromGroup(reqColor));
 });
 app.get("/colors/random", (req, res) => {
   res.json(getARandomColor());
 });
+app.get("/colors", (req, res) => {
+  res.json(getAllColors());
+});
+
 app.get("/colors/:quantity", (req, res) => {
   const reqQuantity = parseInt(req.params.quantity);
   res.json(getRandomColors(reqQuantity));

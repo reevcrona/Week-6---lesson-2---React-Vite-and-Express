@@ -4,7 +4,8 @@ import axios from "axios";
 import { color } from "./types";
 function App() {
   const [apiData, setApiData] = useState<color[] | null>(null);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState<string>("");
+  const [selectValue, setSelectValue] = useState<string>("Red");
   const fetchApi = async () => {
     try {
       const response = await axios.get<color[]>(
@@ -18,7 +19,7 @@ function App() {
   };
   const fetchAllColors = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/colors");
+      const response = await axios.get<color[]>("http://localhost:3000/colors");
       setApiData(response.data);
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
@@ -26,7 +27,21 @@ function App() {
   };
   const fetchArandomColor = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/colors/random");
+      const response = await axios.get<color[]>(
+        "http://localhost:3000/colors/random"
+      );
+      console.log(response.data);
+      setApiData(response.data);
+    } catch (error) {
+      console.error(`Unexpected error: ${error}`);
+    }
+  };
+  const fetchColorsFromGroup = async (e: React.FormEvent<HTMLFormElement>) => {
+    try {
+      e.preventDefault();
+      const response = await axios.get<color[]>(
+        `http://localhost:3000/colors/group?color=${selectValue}`
+      );
       console.log(response.data);
       setApiData(response.data);
     } catch (error) {
@@ -41,7 +56,9 @@ function App() {
   useEffect(() => {
     fetchArandomColor();
   }, []);
-
+  useEffect(() => {
+    console.log(selectValue);
+  }, [selectValue]);
   const renderData = () => {
     if (apiData && apiData.length > 0) {
       return apiData.map((item, index) => {
@@ -83,6 +100,32 @@ function App() {
 
           <button className="api-button" type="submit">
             Get random Colors
+          </button>
+        </form>
+        <form onSubmit={(e) => fetchColorsFromGroup(e)}>
+          <label htmlFor="color-select"></label>
+          <select
+            onChange={(e) => setSelectValue(e.target.value)}
+            className="form-input"
+            name="color-select"
+            id="color-select"
+          >
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Cyan">Cyan</option>
+            <option value="Pink">Pink</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            <option value="Brown">Brown</option>
+            <option value="Gray">Gray</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Teal">Teal</option>
+          </select>
+          <button className="api-button" type="submit">
+            Get colors from group
           </button>
         </form>
         <button className="api-button" onClick={fetchAllColors} type="button">

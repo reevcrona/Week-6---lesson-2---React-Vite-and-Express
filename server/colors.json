@@ -6,7 +6,8 @@
       "rgb": "rgb(220, 20, 60)",
       "hsl": "hsl(348, 83%, 47%)",
       "cmyk": "cmyk(0%, 91%, 73%, 14%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Red"
     },
     {
       "name": "Emerald Green",
@@ -14,7 +15,8 @@
       "rgb": "rgb(80, 200, 120)",
       "hsl": "hsl(141, 60%, 50%)",
       "cmyk": "cmyk(60%, 0%, 40%, 22%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Green"
     },
     {
       "name": "Royal Blue",
@@ -22,7 +24,8 @@
       "rgb": "rgb(65, 105, 225)",
       "hsl": "hsl(225, 73%, 57%)",
       "cmyk": "cmyk(71%, 53%, 0%, 12%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Blue"
     },
     {
       "name": "Goldenrod Yellow",
@@ -30,7 +33,8 @@
       "rgb": "rgb(218, 165, 32)",
       "hsl": "hsl(43, 74%, 49%)",
       "cmyk": "cmyk(0%, 24%, 85%, 15%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Yellow"
     },
     {
       "name": "Electric Cyan",
@@ -38,7 +42,8 @@
       "rgb": "rgb(0, 255, 255)",
       "hsl": "hsl(180, 100%, 50%)",
       "cmyk": "cmyk(100%, 0%, 0%, 0%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Cyan"
     },
     {
       "name": "Fuchsia Pink",
@@ -46,7 +51,8 @@
       "rgb": "rgb(255, 0, 255)",
       "hsl": "hsl(300, 100%, 50%)",
       "cmyk": "cmyk(0%, 100%, 0%, 0%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Pink"
     },
     {
       "name": "Tangerine Orange",
@@ -54,7 +60,8 @@
       "rgb": "rgb(255, 99, 71)",
       "hsl": "hsl(9, 100%, 64%)",
       "cmyk": "cmyk(0%, 61%, 72%, 0%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Orange"
     },
     {
       "name": "Violet Purple",
@@ -62,7 +69,8 @@
       "rgb": "rgb(122, 61, 153)",
       "hsl": "hsl(270, 44%, 41%)",
       "cmyk": "cmyk(20%, 60%, 0%, 40%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Purple"
     },
     {
       "name": "Lavender Pink",
@@ -70,7 +78,8 @@
       "rgb": "rgb(230, 169, 208)",
       "hsl": "hsl(323, 49%, 78%)",
       "cmyk": "cmyk(0%, 26%, 10%, 10%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Pink"
     },
     {
       "name": "Chestnut Brown",
@@ -78,7 +87,8 @@
       "rgb": "rgb(149, 69, 53)",
       "hsl": "hsl(0, 41%, 41%)",
       "cmyk": "cmyk(0%, 54%, 64%, 42%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Brown"
     },
     {
       "name": "Slate Gray",
@@ -86,7 +96,8 @@
       "rgb": "rgb(112, 128, 144)",
       "hsl": "hsl(210, 13%, 50%)",
       "cmyk": "cmyk(22%, 11%, 0%, 44%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Gray"
     },
     {
       "name": "Obsidian Black",
@@ -94,7 +105,8 @@
       "rgb": "rgb(12, 12, 12)",
       "hsl": "hsl(0, 0%, 5%)",
       "cmyk": "cmyk(0%, 0%, 0%, 95%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Black"
     },
     {
       "name": "Ivory White",
@@ -102,7 +114,8 @@
       "rgb": "rgb(255, 255, 240)",
       "hsl": "hsl(60, 100%, 97%)",
       "cmyk": "cmyk(0%, 0%, 6%, 0%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "White"
     },
     {
       "name": "Deep Teal",
@@ -110,7 +123,8 @@
       "rgb": "rgb(0, 109, 107)",
       "hsl": "hsl(179, 100%, 21%)",
       "cmyk": "cmyk(100%, 0%, 2%, 57%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Teal"
     },
     {
       "name": "Lime Green",
@@ -118,7 +132,8 @@
       "rgb": "rgb(50, 205, 50)",
       "hsl": "hsl(120, 61%, 50%)",
       "cmyk": "cmyk(76%, 0%, 76%, 20%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Green"
     },
     {
       "name": "Coral Red",
@@ -126,7 +141,8 @@
       "rgb": "rgb(255, 64, 64)",
       "hsl": "hsl(0, 100%, 63%)",
       "cmyk": "cmyk(0%, 75%, 75%, 0%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Red"
     },
     {
       "name": "Peach Puff",
@@ -134,7 +150,8 @@
       "rgb": "rgb(255, 218, 185)",
       "hsl": "hsl(39, 100%, 86%)",
       "cmyk": "cmyk(0%, 15%, 27%, 0%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Orange"
     },
     {
       "name": "Indigo",
@@ -142,7 +159,8 @@
       "rgb": "rgb(75, 0, 130)",
       "hsl": "hsl(275, 100%, 25%)",
       "cmyk": "cmyk(42%, 100%, 0%, 49%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Purple"
     },
     {
       "name": "Turquoise Blue",
@@ -150,7 +168,8 @@
       "rgb": "rgb(0, 181, 226)",
       "hsl": "hsl(191, 100%, 45%)",
       "cmyk": "cmyk(100%, 20%, 0%, 11%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Blue"
     },
     {
       "name": "Mauve",
@@ -158,7 +177,8 @@
       "rgb": "rgb(224, 176, 255)",
       "hsl": "hsl(263, 100%, 82%)",
       "cmyk": "cmyk(12%, 31%, 0%, 0%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Purple"
     },
     {
       "name": "Sea Green",
@@ -166,7 +186,8 @@
       "rgb": "rgb(46, 139, 87)",
       "hsl": "hsl(146, 50%, 36%)",
       "cmyk": "cmyk(67%, 0%, 37%, 45%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Green"
     },
     {
       "name": "Amethyst Purple",
@@ -174,7 +195,8 @@
       "rgb": "rgb(155, 89, 182)",
       "hsl": "hsl(288, 39%, 53%)",
       "cmyk": "cmyk(15%, 51%, 0%, 29%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Purple"
     },
     {
       "name": "Sunset Orange",
@@ -182,7 +204,8 @@
       "rgb": "rgb(255, 69, 0)",
       "hsl": "hsl(16, 100%, 50%)",
       "cmyk": "cmyk(0%, 73%, 100%, 0%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Orange"
     },
     {
       "name": "Midnight Blue",
@@ -190,7 +213,8 @@
       "rgb": "rgb(25, 25, 112)",
       "hsl": "hsl(240, 64%, 27%)",
       "cmyk": "cmyk(78%, 78%, 0%, 56%)",
-      "textColor": "white"
+      "textColor": "white",
+      "colorGroup": "Blue"
     },
     {
       "name": "Turquoise Green",
@@ -198,7 +222,8 @@
       "rgb": "rgb(160, 214, 180)",
       "hsl": "hsl(140, 33%, 70%)",
       "cmyk": "cmyk(25%, 0%, 16%, 16%)",
-      "textColor": "black"
+      "textColor": "black",
+      "colorGroup": "Green"
     }
   ]
 }

@@ -5,4 +5,5 @@ export interface color {
   hsl: string;
   cmyk: string;
   textColor: string;
+  colorGroup: string;
 }
