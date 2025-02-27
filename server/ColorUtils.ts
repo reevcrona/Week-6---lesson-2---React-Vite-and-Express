@@ -12,6 +12,7 @@ export const getRandomColors = (quantity:number):Color[] => {
   const colorsArray:Color[] = [...tempSet];
   return colorsArray;
 };
+
 export const getARandomColor = ():Color[] => {
   let colorsArray:Color[] = [];
   const randomColor:Color =
@@ -19,9 +20,11 @@ export const getARandomColor = ():Color[] => {
   colorsArray.push(randomColor);
   return colorsArray;
 };
+
 export const getAllColors = ():Color[] => {
   return fakeColorsDb;
 };
+
 export const getColorsFromGroup = (colorGroup:string):Color[] => {
   const colorGroupArray:Color[] = fakeColorsDb.filter(
     (color) => color.colorGroup.toLowerCase() === colorGroup.toLowerCase()

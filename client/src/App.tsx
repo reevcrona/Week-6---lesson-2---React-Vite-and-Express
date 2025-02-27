@@ -11,13 +11,17 @@ function App() {
     fetchArandomColor();
   }, []);
 
-  const fetchApi = async (): Promise<void> => {
+  const fetchRandomColors = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     try {
+      e.preventDefault();
       const response = await axios.get<Color[]>(
-        `http://localhost:3000/colors/${inputValue === "" ? "4" : inputValue}`
+        `http://localhost:3000/colors/${inputValue}`
       );
       console.log(response.data);
       setApiData(response.data);
+      setInputValue("");
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }
@@ -59,12 +63,6 @@ function App() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    fetchApi();
-    setInputValue("");
-  };
-
   const renderData = () => {
     if (apiData && apiData.length > 0) {
       return apiData.map((item, index) => {
@@ -93,14 +91,14 @@ function App() {
   return (
     <div className="main-container">
       <div className="buttons-container">
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => fetchRandomColors(e)}>
           <input
             type="number"
             placeholder="Amount of colors"
             className="form-input"
             value={inputValue}
             min="1"
-            max="25"
+            max="59"
             required
             onChange={(e) => setInputValue(e.target.value)}
           />
