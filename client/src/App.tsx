@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import { color } from "./types";
+import { Color } from "./types";
 function App() {
-  const [apiData, setApiData] = useState<color[] | null>(null);
+  const [apiData, setApiData] = useState<Color[] | null>(null);
   const [inputValue, setInputValue] = useState<string>("");
   const [selectValue, setSelectValue] = useState<string>("Red");
-  const fetchApi = async () => {
+
+  useEffect(() => {
+    fetchArandomColor();
+  }, []);
+
+  const fetchApi = async (): Promise<void> => {
     try {
-      const response = await axios.get<color[]>(
+      const response = await axios.get<Color[]>(
         `http://localhost:3000/colors/${inputValue === "" ? "4" : inputValue}`
       );
       console.log(response.data);
@@ -17,17 +22,19 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
-  const fetchAllColors = async () => {
+
+  const fetchAllColors = async (): Promise<void> => {
     try {
-      const response = await axios.get<color[]>("http://localhost:3000/colors");
+      const response = await axios.get<Color[]>("http://localhost:3000/colors");
       setApiData(response.data);
     } catch (error) {
       console.error(`Unexpected error: ${error}`);
     }
   };
-  const fetchArandomColor = async () => {
+
+  const fetchArandomColor = async (): Promise<void> => {
     try {
-      const response = await axios.get<color[]>(
+      const response = await axios.get<Color[]>(
         "http://localhost:3000/colors/random"
       );
       console.log(response.data);
@@ -36,10 +43,13 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
-  const fetchColorsFromGroup = async (e: React.FormEvent<HTMLFormElement>) => {
+
+  const fetchColorsFromGroup = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     try {
       e.preventDefault();
-      const response = await axios.get<color[]>(
+      const response = await axios.get<Color[]>(
         `http://localhost:3000/colors/group?color=${selectValue}`
       );
       console.log(response.data);
@@ -48,39 +58,34 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     fetchApi();
     setInputValue("");
   };
-  useEffect(() => {
-    fetchArandomColor();
-  }, []);
-  useEffect(() => {
-    console.log(selectValue);
-  }, [selectValue]);
+
   const renderData = () => {
-    if (apiData && apiData.length > 0) {
-      return apiData.map((item, index) => {
-        return (
+    if (!apiData || apiData.length > 0) return <p>No colors found</p>;
+    return apiData.map((item, index) => {
+      return (
+        <div
+          className={apiData.length > 5 ? "color-row" : "color-column"}
+          style={{ backgroundColor: item.hex, color: item.textColor }}
+          key={index}
+        >
           <div
-            className={apiData.length > 5 ? "color-row" : "color-column"}
-            style={{ backgroundColor: item.hex, color: item.textColor }}
-            key={index}
+            className={apiData.length > 5 ? "color-info-small" : "color-info"}
           >
-            <div
-              className={apiData.length > 5 ? "color-info-small" : "color-info"}
-            >
-              <h3>{item.name}</h3>
-              <p>Hexcode: {item.hex}</p>
-              <p>{item.rgb}</p>
-              <p>{item.cmyk}</p>
-              <p>{item.hsl}</p>
-            </div>
+            <h3>{item.name}</h3>
+            <p>Hexcode: {item.hex}</p>
+            <p>{item.rgb}</p>
+            <p>{item.cmyk}</p>
+            <p>{item.hsl}</p>
           </div>
-        );
-      });
-    }
+        </div>
+      );
+    });
   };
 
   return (

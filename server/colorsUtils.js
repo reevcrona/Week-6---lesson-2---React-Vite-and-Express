@@ -1,4 +1,4 @@
-import colors from "./colors.json" assert { type: "json" };
+import colors from "./colors.json" with { type: "json" };
 
 const fakeColorsDb = colors.colors;
 
