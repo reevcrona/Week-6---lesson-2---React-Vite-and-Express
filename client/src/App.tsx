@@ -6,6 +6,11 @@ function App() {
   const [apiData, setApiData] = useState<color[] | null>(null);
   const [inputValue, setInputValue] = useState<string>("");
   const [selectValue, setSelectValue] = useState<string>("Red");
+
+  useEffect(() => {
+    fetchArandomColor();
+  }, []);
+
   const fetchApi = async () => {
     try {
       const response = await axios.get<color[]>(
@@ -17,6 +22,7 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
+
   const fetchAllColors = async () => {
     try {
       const response = await axios.get<color[]>("http://localhost:3000/colors");
@@ -25,6 +31,7 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
+
   const fetchArandomColor = async () => {
     try {
       const response = await axios.get<color[]>(
@@ -36,6 +43,7 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
+
   const fetchColorsFromGroup = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
@@ -48,17 +56,13 @@ function App() {
       console.error(`Unexpected error: ${error}`);
     }
   };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     fetchApi();
     setInputValue("");
   };
-  useEffect(() => {
-    fetchArandomColor();
-  }, []);
-  useEffect(() => {
-    console.log(selectValue);
-  }, [selectValue]);
+
   const renderData = () => {
     if (apiData && apiData.length > 0) {
       return apiData.map((item, index) => {
