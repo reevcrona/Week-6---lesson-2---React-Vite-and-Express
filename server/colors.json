@@ -1,5 +1,5 @@
 {
-  "colors": [
+  "data": [
     {
       "name": "Crimson Red",
       "hex": "#DC143C",
@@ -224,6 +224,320 @@
       "cmyk": "cmyk(25%, 0%, 16%, 16%)",
       "textColor": "black",
       "colorGroup": "Green"
+    },
+    {
+      "name": "Rose Gold",
+      "hex": "#B76E79",
+      "rgb": "rgb(183, 110, 121)",
+      "hsl": "hsl(351, 34%, 57%)",
+      "cmyk": "cmyk(0%, 40%, 34%, 28%)",
+      "textColor": "white",
+      "colorGroup": "Pink"
+    },
+    {
+      "name": "Sapphire Blue",
+      "hex": "#0F52BA",
+      "rgb": "rgb(15, 82, 186)",
+      "hsl": "hsl(216, 85%, 39%)",
+      "cmyk": "cmyk(92%, 56%, 0%, 27%)",
+      "textColor": "white",
+      "colorGroup": "Blue"
+    },
+    {
+      "name": "Olive Green",
+      "hex": "#808000",
+      "rgb": "rgb(128, 128, 0)",
+      "hsl": "hsl(60, 100%, 25%)",
+      "cmyk": "cmyk(0%, 0%, 100%, 50%)",
+      "textColor": "white",
+      "colorGroup": "Green"
+    },
+    {
+      "name": "Ruby Red",
+      "hex": "#E0115F",
+      "rgb": "rgb(224, 17, 95)",
+      "hsl": "hsl(338, 86%, 47%)",
+      "cmyk": "cmyk(0%, 92%, 58%, 12%)",
+      "textColor": "white",
+      "colorGroup": "Red"
+    },
+    {
+      "name": "Periwinkle",
+      "hex": "#CCCCFF",
+      "rgb": "rgb(204, 204, 255)",
+      "hsl": "hsl(240, 100%, 90%)",
+      "cmyk": "cmyk(20%, 20%, 0%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Purple"
+    },
+    {
+      "name": "Charcoal Gray",
+      "hex": "#36454F",
+      "rgb": "rgb(54, 69, 79)",
+      "hsl": "hsl(204, 19%, 26%)",
+      "cmyk": "cmyk(32%, 13%, 0%, 69%)",
+      "textColor": "white",
+      "colorGroup": "Gray"
+    },
+    {
+      "name": "Canary Yellow",
+      "hex": "#FFFF99",
+      "rgb": "rgb(255, 255, 153)",
+      "hsl": "hsl(60, 100%, 80%)",
+      "cmyk": "cmyk(0%, 0%, 40%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Yellow"
+    },
+    {
+      "name": "Burgundy",
+      "hex": "#800020",
+      "rgb": "rgb(128, 0, 32)",
+      "hsl": "hsl(345, 100%, 25%)",
+      "cmyk": "cmyk(0%, 100%, 75%, 50%)",
+      "textColor": "white",
+      "colorGroup": "Red"
+    },
+    {
+      "name": "Aquamarine",
+      "hex": "#7FFFD4",
+      "rgb": "rgb(127, 255, 212)",
+      "hsl": "hsl(160, 100%, 75%)",
+      "cmyk": "cmyk(50%, 0%, 17%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Cyan"
+    },
+    {
+      "name": "Magenta",
+      "hex": "#FF00FF",
+      "rgb": "rgb(255, 0, 255)",
+      "hsl": "hsl(300, 100%, 50%)",
+      "cmyk": "cmyk(0%, 100%, 0%, 0%)",
+      "textColor": "white",
+      "colorGroup": "Pink"
+    },
+
+    {
+      "name": "Lemon Yellow",
+      "hex": "#FFF44F",
+      "rgb": "rgb(255, 244, 79)",
+      "hsl": "hsl(56, 100%, 65%)",
+      "cmyk": "cmyk(0%, 4%, 69%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Yellow"
+    },
+    {
+      "name": "Mustard Yellow",
+      "hex": "#FFDB58",
+      "rgb": "rgb(255, 219, 88)",
+      "hsl": "hsl(47, 100%, 67%)",
+      "cmyk": "cmyk(0%, 14%, 65%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Yellow"
+    },
+    {
+      "name": "Banana Yellow",
+      "hex": "#FFE135",
+      "rgb": "rgb(255, 225, 53)",
+      "hsl": "hsl(51, 100%, 60%)",
+      "cmyk": "cmyk(0%, 12%, 79%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Yellow"
+    },
+
+    {
+      "name": "Sky Cyan",
+      "hex": "#87CEEB",
+      "rgb": "rgb(135, 206, 235)",
+      "hsl": "hsl(197, 71%, 73%)",
+      "cmyk": "cmyk(43%, 12%, 0%, 8%)",
+      "textColor": "black",
+      "colorGroup": "Cyan"
+    },
+    {
+      "name": "Ice Cyan",
+      "hex": "#A6F0FF",
+      "rgb": "rgb(166, 240, 255)",
+      "hsl": "hsl(190, 100%, 83%)",
+      "cmyk": "cmyk(35%, 6%, 0%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Cyan"
+    },
+    {
+      "name": "Ocean Cyan",
+      "hex": "#00CED1",
+      "rgb": "rgb(0, 206, 209)",
+      "hsl": "hsl(181, 100%, 41%)",
+      "cmyk": "cmyk(100%, 0%, 0%, 18%)",
+      "textColor": "black",
+      "colorGroup": "Cyan"
+    },
+
+    {
+      "name": "Burnt Orange",
+      "hex": "#CC5500",
+      "rgb": "rgb(204, 85, 0)",
+      "hsl": "hsl(25, 100%, 40%)",
+      "cmyk": "cmyk(0%, 58%, 100%, 20%)",
+      "textColor": "white",
+      "colorGroup": "Orange"
+    },
+    {
+      "name": "Apricot Orange",
+      "hex": "#FBCEB1",
+      "rgb": "rgb(251, 206, 177)",
+      "hsl": "hsl(22, 90%, 84%)",
+      "cmyk": "cmyk(0%, 18%, 29%, 2%)",
+      "textColor": "black",
+      "colorGroup": "Orange"
+    },
+    {
+      "name": "Pumpkin Orange",
+      "hex": "#FF7518",
+      "rgb": "rgb(255, 117, 24)",
+      "hsl": "hsl(24, 100%, 55%)",
+      "cmyk": "cmyk(0%, 54%, 91%, 0%)",
+      "textColor": "black",
+      "colorGroup": "Orange"
+    },
+
+    {
+      "name": "Chocolate Brown",
+      "hex": "#7B3F00",
+      "rgb": "rgb(123, 63, 0)",
+      "hsl": "hsl(31, 100%, 24%)",
+      "cmyk": "cmyk(0%, 49%, 100%, 52%)",
+      "textColor": "white",
+      "colorGroup": "Brown"
+    },
+    {
+      "name": "Caramel Brown",
+      "hex": "#AF6E4D",
+      "rgb": "rgb(175, 110, 77)",
+      "hsl": "hsl(21, 39%, 49%)",
+      "cmyk": "cmyk(0%, 37%, 56%, 31%)",
+      "textColor": "white",
+      "colorGroup": "Brown"
+    },
+    {
+      "name": "Mocha Brown",
+      "hex": "#6F4E37",
+      "rgb": "rgb(111, 78, 55)",
+      "hsl": "hsl(25, 34%, 33%)",
+      "cmyk": "cmyk(0%, 30%, 50%, 56%)",
+      "textColor": "white",
+      "colorGroup": "Brown"
+    },
+
+    {
+      "name": "Ash Gray",
+      "hex": "#B2BEB5",
+      "rgb": "rgb(178, 190, 181)",
+      "hsl": "hsl(135, 8%, 72%)",
+      "cmyk": "cmyk(6%, 0%, 5%, 25%)",
+      "textColor": "black",
+      "colorGroup": "Gray"
+    },
+    {
+      "name": "Stone Gray",
+      "hex": "#928E85",
+      "rgb": "rgb(146, 142, 133)",
+      "hsl": "hsl(43, 6%, 55%)",
+      "cmyk": "cmyk(0%, 3%, 9%, 43%)",
+      "textColor": "black",
+      "colorGroup": "Gray"
+    },
+    {
+      "name": "Smoke Gray",
+      "hex": "#848884",
+      "rgb": "rgb(132, 136, 132)",
+      "hsl": "hsl(120, 2%, 53%)",
+      "cmyk": "cmyk(3%, 0%, 3%, 47%)",
+      "textColor": "black",
+      "colorGroup": "Gray"
+    },
+
+    {
+      "name": "Jet Black",
+      "hex": "#343434",
+      "rgb": "rgb(52, 52, 52)",
+      "hsl": "hsl(0, 0%, 20%)",
+      "cmyk": "cmyk(0%, 0%, 0%, 80%)",
+      "textColor": "white",
+      "colorGroup": "Black"
+    },
+    {
+      "name": "Onyx Black",
+      "hex": "#353839",
+      "rgb": "rgb(53, 56, 57)",
+      "hsl": "hsl(195, 4%, 22%)",
+      "cmyk": "cmyk(7%, 2%, 0%, 78%)",
+      "textColor": "white",
+      "colorGroup": "Black"
+    },
+    {
+      "name": "Raven Black",
+      "hex": "#1C1C1C",
+      "rgb": "rgb(28, 28, 28)",
+      "hsl": "hsl(0, 0%, 11%)",
+      "cmyk": "cmyk(0%, 0%, 0%, 89%)",
+      "textColor": "white",
+      "colorGroup": "Black"
+    },
+
+    {
+      "name": "Snow White",
+      "hex": "#FFFAFA",
+      "rgb": "rgb(255, 250, 250)",
+      "hsl": "hsl(0, 100%, 99%)",
+      "cmyk": "cmyk(0%, 2%, 2%, 0%)",
+      "textColor": "black",
+      "colorGroup": "White"
+    },
+    {
+      "name": "Pearl White",
+      "hex": "#F0F0F0",
+      "rgb": "rgb(240, 240, 240)",
+      "hsl": "hsl(0, 0%, 94%)",
+      "cmyk": "cmyk(0%, 0%, 0%, 6%)",
+      "textColor": "black",
+      "colorGroup": "White"
+    },
+    {
+      "name": "Alabaster White",
+      "hex": "#EDEAE0",
+      "rgb": "rgb(237, 234, 224)",
+      "hsl": "hsl(46, 27%, 90%)",
+      "cmyk": "cmyk(0%, 1%, 5%, 7%)",
+      "textColor": "black",
+      "colorGroup": "White"
+    },
+
+    {
+      "name": "Seafoam Teal",
+      "hex": "#80CBC4",
+      "rgb": "rgb(128, 203, 196)",
+      "hsl": "hsl(174, 41%, 65%)",
+      "cmyk": "cmyk(37%, 0%, 3%, 20%)",
+      "textColor": "black",
+      "colorGroup": "Teal"
+    },
+    {
+      "name": "Mint Teal",
+      "hex": "#48D1CC",
+      "rgb": "rgb(72, 209, 204)",
+      "hsl": "hsl(178, 60%, 55%)",
+      "cmyk": "cmyk(66%, 0%, 2%, 18%)",
+      "textColor": "black",
+      "colorGroup": "Teal"
+    },
+    {
+      "name": "Jade Teal",
+      "hex": "#00A86B",
+      "rgb": "rgb(0, 168, 107)",
+      "hsl": "hsl(158, 100%, 33%)",
+      "cmyk": "cmyk(100%, 0%, 36%, 34%)",
+      "textColor": "white",
+      "colorGroup": "Teal"
     }
   ]
 }
