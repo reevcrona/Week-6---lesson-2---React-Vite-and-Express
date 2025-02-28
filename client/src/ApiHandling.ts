@@ -26,7 +26,6 @@ export const fetchAllColors = async (
   try {
     const response = await axios.get<Color[]>("http://localhost:3000/colors");
     setApiData(response.data);
-    console.log(response.data);
   } catch (error) {
     console.error(`Unexpected error: ${error}`);
   }
@@ -39,7 +38,7 @@ export const fetchArandomColor = async (
     const response = await axios.get<Color[]>(
       "http://localhost:3000/colors/random"
     );
-    console.log(response.data);
+
     setApiData(response.data);
   } catch (error) {
     console.error(`Unexpected error: ${error}`);
@@ -56,7 +55,7 @@ export const fetchColorsFromGroup = async (
     const response = await axios.get<Color[]>(
       `http://localhost:3000/colors/group?color=${selectValue}`
     );
-    console.log(response.data);
+
     setApiData(response.data);
   } catch (error) {
     console.error(`Unexpected error: ${error}`);
